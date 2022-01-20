@@ -23,6 +23,7 @@ def listener(message):
 
         if texto == "holita":
             bot.send_message(chat_id,"patatita")
+            return True
 
         processUrl = url.getRequestPage(texto)
 
