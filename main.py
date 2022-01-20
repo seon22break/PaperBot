@@ -17,8 +17,12 @@ def listener(message):
     for m in message:
         chat_id = m.chat.id
         texto = m.text
+
         if texto in allowed_commands:
             return True
+
+        if texto == "holita":
+            bot.send_message(chat_id,"patatita")
 
         processUrl = url.getRequestPage(texto)
 
